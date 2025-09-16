@@ -18,7 +18,12 @@ namespace Lab1
 
         private double f2(double x)
         {
-            return ((2 * x) + 2) / (Math.Tan((2 * x) - 1) + 1);
+            double t = Math.Tan(2 * x);
+            if(t == 0) {
+                t = 1;
+            }
+
+            return ((2 * x) + 2) / ((t - 1) + 1);
         }
 
         private double f3(double x)
@@ -26,7 +31,7 @@ namespace Lab1
             return Math.Pow(x, 4) - Math.Pow(x, x);
         }
 
-        public void tab(double xn = -1.25, double xk = 9.39, double h = 0.1, double a = 0.4)
+        public void tab(double xn = -1.25, double xk = 9.39, double h = 0.4, double a = 0.8)
         {
             double x = xn, y;
             int i = 0;
