@@ -20,12 +20,26 @@ namespace Lab1
             chart1.Series[0].Points.Clear();
             tabul.tab(xn, xk, h, a);
 
-            for (int i = 0; i < tabul.n; i++) 
+            for (int i = 0; i < tabul.n; i++)
             {
-                dataGridView1.Rows.Add(Math.Round(tabul.xy[i, 0],2).ToString(),
-                    Math.Round(tabul.xy[i, 1],3).ToString());
+                dataGridView1.Rows.Add(Math.Round(tabul.xy[i, 0], 2).ToString(),
+                    Math.Round(tabul.xy[i, 1], 3).ToString());
                 chart1.Series[0].Points.AddXY(tabul.xy[i, 0], tabul.xy[i, 1]);
             }
+        }
+
+        private void одновимірніМасивиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.Show();
+            this.Hide();
+        }
+
+        private void двовимірніМасивиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.Show();
+            this.Hide();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Lab1
 {
-    partial class Form2
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -30,11 +30,12 @@
         {
             button1 = new Button();
             dataGridView1 = new DataGridView();
-            label2 = new Label();
             label3 = new Label();
             button2 = new Button();
-            А = new DataGridViewTextBoxColumn();
-            B = new DataGridViewTextBoxColumn();
+            label2 = new Label();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -51,63 +52,79 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { А, B });
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(245, 426);
-            dataGridView1.TabIndex = 11;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(263, 50);
-            label2.Name = "label2";
-            label2.Size = new Size(39, 15);
-            label2.TabIndex = 14;
-            label2.Text = "Дощ: ";
+            dataGridView1.Size = new Size(481, 426);
+            dataGridView1.TabIndex = 12;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(263, 81);
+            label3.Location = new Point(508, 114);
             label3.Name = "label3";
-            label3.Size = new Size(36, 15);
+            label3.Size = new Size(148, 15);
             label3.TabIndex = 15;
-            label3.Text = "Сніг: ";
+            label3.Text = "Добуток нижче діагоналі:";
             // 
             // button2
             // 
-            button2.Location = new Point(263, 12);
+            button2.Location = new Point(508, 78);
             button2.Name = "button2";
-            button2.Size = new Size(85, 23);
+            button2.Size = new Size(100, 23);
             button2.TabIndex = 17;
-            button2.Text = "Обрахувати";
+            button2.Text = "Розрахунок";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // А
+            // label2
             // 
-            А.HeaderText = "Температура";
-            А.Name = "А";
-            А.Width = 102;
+            label2.AutoSize = true;
+            label2.Location = new Point(508, 43);
+            label2.Name = "label2";
+            label2.Size = new Size(26, 15);
+            label2.TabIndex = 14;
+            label2.Text = "M=";
             // 
-            // B
+            // textBox2
             // 
-            B.HeaderText = "Опади";
-            B.Name = "B";
+            textBox2.Location = new Point(538, 40);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 19;
+            textBox2.Text = "5";
             // 
-            // Form2
+            // textBox1
+            // 
+            textBox1.Location = new Point(538, 11);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 18;
+            textBox1.Text = "5";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(508, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(24, 15);
+            label1.TabIndex = 13;
+            label1.Text = "N=";
+            // 
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
-            Name = "Form2";
-            Text = "Form2";
+            Name = "Form3";
+            Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -117,10 +134,11 @@
 
         private Button button1;
         private DataGridView dataGridView1;
-        private Label label2;
         private Label label3;
         private Button button2;
-        private DataGridViewTextBoxColumn А;
-        private DataGridViewTextBoxColumn B;
+        private Label label2;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label1;
     }
 }
