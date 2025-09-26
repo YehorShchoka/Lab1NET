@@ -41,5 +41,12 @@ namespace Lab1
             f.Show();
             this.Hide();
         }
+
+        private void unitTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UnitTest f = new UnitTest();
+            f.Show();
+            this.Hide();
+        }
     }
 }

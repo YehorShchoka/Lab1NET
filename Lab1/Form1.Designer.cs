@@ -48,6 +48,7 @@
             роботаЗМасивамиToolStripMenuItem = new ToolStripMenuItem();
             одновимірніМасивиToolStripMenuItem = new ToolStripMenuItem();
             двовимірніМасивиToolStripMenuItem = new ToolStripMenuItem();
+            unitTestToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             menuStrip1.SuspendLayout();
@@ -180,7 +181,7 @@
             // 
             // роботаЗМасивамиToolStripMenuItem
             // 
-            роботаЗМасивамиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { одновимірніМасивиToolStripMenuItem, двовимірніМасивиToolStripMenuItem });
+            роботаЗМасивамиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { одновимірніМасивиToolStripMenuItem, двовимірніМасивиToolStripMenuItem, unitTestToolStripMenuItem });
             роботаЗМасивамиToolStripMenuItem.Name = "роботаЗМасивамиToolStripMenuItem";
             роботаЗМасивамиToolStripMenuItem.Size = new Size(125, 20);
             роботаЗМасивамиToolStripMenuItem.Text = "Робота з масивами";
@@ -198,6 +199,13 @@
             двовимірніМасивиToolStripMenuItem.Size = new Size(189, 22);
             двовимірніМасивиToolStripMenuItem.Text = "Двовимірні масиви";
             двовимірніМасивиToolStripMenuItem.Click += двовимірніМасивиToolStripMenuItem_Click;
+            // 
+            // unitTestToolStripMenuItem
+            // 
+            unitTestToolStripMenuItem.Name = "unitTestToolStripMenuItem";
+            unitTestToolStripMenuItem.Size = new Size(189, 22);
+            unitTestToolStripMenuItem.Text = "UnitTest";
+            unitTestToolStripMenuItem.Click += unitTestToolStripMenuItem_Click;
             // 
             // Prog
             // 
@@ -248,5 +256,6 @@
         private ToolStripMenuItem роботаЗМасивамиToolStripMenuItem;
         private ToolStripMenuItem одновимірніМасивиToolStripMenuItem;
         private ToolStripMenuItem двовимірніМасивиToolStripMenuItem;
+        private ToolStripMenuItem unitTestToolStripMenuItem;
     }
 }
